@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 3.5em;
+}
+header, footer{
+    background-color: rgb(21, 21, 107);
+    width:100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    color:white;
+    position:absolute;
+    height: 3em;
+    bottom:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#redes{
+    width:100px;
+}
