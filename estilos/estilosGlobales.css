@@ -9,37 +9,44 @@ body{
     padding-bottom: 3.5em;
 }
 header, footer{
-   background-color: rgb(99, 230, 253);
-   width:100%;
+   background-color: rgb(5, 95, 111);
+   
 }
 
 .navegacion, .iniciarSesion, .registrar{
-    color:black;
+    color:rgb(3, 92, 117);
     text-decoration: none;
     font-size: 1.5em;
     padding: 2px;
-    background-color: rgb(238, 235, 235);
+    background-color: rgb(49, 243, 243);
+    margin-inline: 2px;
 }
 
-img[alt="icono samco"]{
-    height: 100%;
-}
 footer{
-    
+    width: 100%;
     color:white;
     position:absolute;
     height: 3em;
     bottom:0px;
-}
-.busqueda{
-    height: 80px;
-    display: flex;
-    justify-content: space-around;
-}
-.menu{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+.busqueda{
+    height: 5em;
+    border-bottom: 1px solid aqua;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu{
+    height: 2.5em;
+    width: 30em;
+    margin:auto;
+    display: flex;
+    align-items: center;
+}
+
 #redes{
     width:100px;
 }
