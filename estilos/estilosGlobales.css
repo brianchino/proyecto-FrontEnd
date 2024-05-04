@@ -3,33 +3,26 @@
     margin: 0px;
 }
 body{
-    background-image: linear-gradient(rgb(0, 0, 0),rgba(0,0,0,0),rgb(0, 0, 0)),url(../multimedia/pastel-clouds-on-dark-background-22153ds7szekuogz.jpg);
+    background-image: url(../multimedia/background.png);
     position: relative;
     min-height: 100vh;
     padding-bottom: 3.5em;
 }
 header, footer{
-   background-color: black;
+   background-color: rgb(99, 230, 253);
    width:100%;
 }
 
-.navegacion{
-    color: white;
+.navegacion, .iniciarSesion, .registrar{
+    color:black;
     text-decoration: none;
     font-size: 1.5em;
     padding: 2px;
-    background-color: grey;
-}
-nav{
-    margin: 5px;
-    display: flex;
-    justify-content: space-between;
+    background-color: rgb(238, 235, 235);
 }
 
-
-
-header{
-    height: 4em;
+img[alt="icono samco"]{
+    height: 100%;
 }
 footer{
     
@@ -37,11 +30,16 @@ footer{
     position:absolute;
     height: 3em;
     bottom:0px;
+}
+.busqueda{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-
 #redes{
     width:100px;
 }
