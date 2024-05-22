@@ -3,7 +3,8 @@
     margin: 0px;
 }
 body{
-    background-image: url(../multimedia/background.png);
+    background-color: rgb(227, 249, 252);;
+    /*background-image: url(../multimedia/background.png);*/
     position: relative;
     min-height: 100vh;
     padding-bottom: 3.5em;
