@@ -10,6 +10,8 @@ body{
     padding-bottom: 3.5em;
 }
 header, footer{
+    width: 100%;
+    
    background-color: rgb(5, 95, 111);
    
 }
@@ -21,9 +23,8 @@ header, footer{
     
 }
 .navegacion{
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
+    
+    padding:6px 2px ;
 }
 .navegacion:hover ,.iniciarSesion:hover , .registrar:hover {
     transition-duration:0.4s ;
@@ -34,7 +35,7 @@ header, footer{
     padding: 4px 3px;
 }
 footer{
-    width: 100%;
+    
     color:white;
     position:absolute;
     height: 3em;
@@ -47,11 +48,11 @@ footer{
     height: 4em;
     border-bottom: 1px solid rgb(154, 243, 233);
     display: grid;
-    grid-template-columns: 150px 1fr 50% 1fr 150px ;
+    grid-template-columns: 150px 1fr 150px ;
     
 }
 .ingresoUsuario{
-    grid-column: 5;
+    grid-column: 3;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -61,10 +62,10 @@ img[alt="icono samco"]{
     height: 63px;
 }
 #formBusqueda{
-    width: 100%;
-    grid-column-start: 3;
+    width: 60%;
+    grid-column-start: 2;
     display: flex;
-    align-items: center;
+    margin:auto;
 }
 .search{
     height:2.5em;
@@ -84,7 +85,8 @@ img[alt="icono samco"]{
     margin:auto;
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #redes{
