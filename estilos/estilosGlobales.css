@@ -46,7 +46,7 @@ footer{
     height: 4em;
     border-bottom: 1px solid rgb(154, 243, 233);
     display: grid;
-    grid-template-columns: 100px 500px 1fr 100px 150px ;
+    grid-template-columns: 150px 1fr 50% 1fr 150px ;
     
 }
 .ingresoUsuario{
@@ -67,7 +67,7 @@ img[alt="icono samco"]{
 }
 .search{
     height:2.5em;
-    width:65%;
+    width:100%;
     font-size: medium;
     padding-left: 20px;
     border-radius:20px;
