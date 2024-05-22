@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registrece</title>
     <link rel="stylesheet" href="../estilos/estilosGlobales.css">
+    <link rel="icon" type="ico" href="../multimedia/logo.ico" sizes="64x64">
     <script src="https://kit.fontawesome.com/12af3073e7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="busqueda">
             <img src="../multimedia/logo-Photoroom.png-Photoroom.png" alt="icono samco">
-            <form action="">
-                <input type="search">
+            <form id="formBusqueda" action method="post" enctype="text/plain">
+                <input class="search"type="search" placeholder="buscar">
             </form>
-            <div>
-                <a class="navegacion"href="iniciarSesion.html">iniciar sesion</a>
-                <a class="navegacion"href="registrar.html">registrarse</a>
+            <div class="ingresoUsuario">
+                <a class="iniciarSesion"href="iniciarSesion.html">iniciar sesion</a>
+                <a class="registrar"href="registrar.html">registrarse</a>
             </div>
+            
         </nav>
         <nav class="menu">
             <a class="navegacion"href="../index.html">quienes somos</a>
