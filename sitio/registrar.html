@@ -30,7 +30,75 @@
         
     </header>
     <main>
-        
+        <h2>¡unete a nosotros!</h2>
+        <form action method="post" id="formulario">
+            <fieldset>
+                <legend>datos personales</legend>
+                <section>
+                    <label for="nombre">Nombre<i class="obligatorio">*</i>: </label>
+                    <input type="text" name="nombre"  placeholder="Ingrese su nombre aqui..." required>
+                </section>
+                <section>
+                    <label for="apellido">Apellido<i class="obligatorio">*</i>: </label>
+                    <input type="text" name="apellido"  placeholder="Ingrese su apellido aqui..." required>
+                </section> 
+                <section>
+                    <label for="dni">DNI<i class="obligatorio">*</i>: </label>
+                    <input type="number" name="dni"  placeholder="XXXXXXXX" maxlength="8" required>
+                </section> 
+                <section>
+                    <label for="cumpleanios">Fecha Nac: </label>
+                    <input type="date" name="cumpleanios" id="cumpleanios">
+                </section> 
+                <section id="opciones">
+                    <label for="genero">Género</label>
+                    <input type="radio" name="genero" id="genero" value="1">Hombre
+                    <input type="radio" name="genero" id="genero" value="2">Mujer
+                    <input type="radio" name="genero" id="genero" value="3">Otro
+                </section> 
+            </fieldset>
+            <fieldset>
+                <legend>direccion</legend>
+                <section>
+                    <label for="calle">Calle: </label>
+                    <input type="text" name="calle"  placeholder="Ingrese su calle aqui...">
+                </section>
+                <section>
+                    <label for="numero">Numero: </label>
+                    <input type="text" name="numero" placeholder="Ingrese el numero...">
+                </section>
+                <section>
+                    <label for="ciudad">Ciudad: </label>
+                    <input type="text" name="ciudad" value="C.A.B.A">
+                </section>
+                <section>
+                    <label for="cp">Codigo Postal: </label>
+                    <input type="text" name="cp" placeholder="Ingrese su codigo postal">
+                </section>
+                <section>
+                    <label for="telefono">Telefono: </label>
+                    <input type="text" name="telefono" placeholder="Ingrese su telefono aqui" maxlength="10">
+                </section>
+            </fieldset>
+            <fieldset>
+                <legend>usuario</legend>
+                <section>
+                    <label for="mail">Mail<i class="obligatorio">*</i>: </label>
+                    <input type="email" name="mail" required>
+                </section>
+                
+                <section>
+                    <label for="clave">Clave<i class="obligatorio">*</i>: </label>
+                    <input type="password" name="clave" maxlength="10" required>
+                </section>
+                <section>
+                    <label for="clave2">confirmacion <br>Contraseña<i class="obligatorio">:</i></label>
+                    <input type="password" name="clave2" maxlength="10">
+                </section>
+            </fieldset>
+            <input type="reset" name="borrar" value="BORRAR">
+            <input type="submit" value="ENVIAR">
+        </form>
     </main>
     <footer>
         <section id="redes">
