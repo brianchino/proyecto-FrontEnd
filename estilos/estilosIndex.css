@@ -6,13 +6,18 @@
     grid-row-gap: 15px;
 
 }
-.quienesSomos h2,.mision h3, .valores h3, .diferenciales h3{
+.quienesSomos h2{
+    font-size: 3em;
+    text-align: center;
+    font-weight:lighter;
+}
+.mision h3, .valores h3, .diferenciales h3,.nuestroFuturo h3{
     
     font-size: 2em;
     text-align: center;
     font-weight:lighter;
 }
-.quienesSomos h2,.mision h3, .valores h3{
+.quienesSomos h2,.mision h3, .valores h3, .nuestroFuturo h3{
     grid-column: 1/3;
 }
 .diferenciales h3{
@@ -59,7 +64,69 @@
 .diferenciales img{
     border-radius: 50%;
 }
-
+.contenedor-acordeon{
+    width:100%;
+    margin:auto;
+}
+.acordeon label{
+    display: block;
+    padding:20px;
+    background-color:rgb(0, 61, 71) ;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    color:white;
+    transition: all 300ms ease;
+}
+.acordeon label:hover{
+    background-color: rgb(3, 39, 45);
+}
+.acordeon .contenido-acordeon{
+    padding:0px;
+    margin-bottom: 2px;
+    max-height: 0px;
+    overflow: hidden;
+    background-color: rgb(5, 95, 111);
+    
+    transition:all 300ms ease;
+}
+.contenido-acordeon ul{
+    color: white;
+    margin: 0px 6px;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 300px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+    display:none;
+}
+.nuestroFuturo{
+    margin: 2em 10% 20em 10%;
+    display: grid;
+    grid-template: 5em 1fr 1fr / 1fr 1fr ;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+}
+.nuestroFuturo img{
+    max-height: 20em;
+    max-width: 30em;
+    border-radius: 10px;
+    margin:20px;
+}
+.nuestroFuturo section{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(5, 95, 111);
+    border-radius: 10px;
+    color:white;
+}
+.nuestroFuturo p{
+    margin:auto 20px;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+}
 @media (max-width:600px){
     .quienesSomos img{
         width:5em;
