@@ -62,14 +62,15 @@ img[alt="icono samco"]{
     height: 63px;
 }
 #formBusqueda{
-    width: 60%;
+    width: 100%;
     grid-column-start: 2;
     display: flex;
     margin:auto;
 }
 .search{
     height:2.5em;
-    width:100%;
+    width:60%;
+    margin: auto;
     font-size: medium;
     padding-left: 20px;
     border-radius:20px;
@@ -86,7 +87,6 @@ img[alt="icono samco"]{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 #redes{
@@ -95,4 +95,32 @@ img[alt="icono samco"]{
 header{
     position:sticky;
     top:0;
+}
+@media (max-width:600px) {
+    .menu{
+        width: auto;
+        display:grid;
+        grid-template: 1fr 1fr/1fr 1fr ;
+        height: 3.5em;
+    }
+    .navegacion, .iniciarSesion, .registrar{
+        font-size: 0.8em;
+        margin: auto;
+    }
+    .iniciarSesion,  .registrar{
+        height: 1.8em;
+    }
+    .busqueda{
+        height: 3.6em;
+        grid-template-columns: 3.6em  1fr 100px ;
+    }
+    .search{
+        height: auto;
+        font-size:small;
+        width: 100%;
+    }
+    img[alt="icono samco"]{
+        height: 3.6em;
+    }
+
 }

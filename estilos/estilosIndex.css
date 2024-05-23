@@ -131,4 +131,7 @@
     .quienesSomos img{
         width:5em;
     }
+    .nuestroFuturo img{
+        display:none;
+    }
 }
