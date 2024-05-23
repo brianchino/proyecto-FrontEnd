@@ -1,20 +1,20 @@
 .quienesSomos , .mision{
-    margin: 2em 10% 20em 10%;
+    margin: 3em 10% 20em 10%;
     display: grid;
-    grid-template: 5em 1fr / 1fr 1fr;
+    grid-template: auto 1fr / 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 15px;
 
 }
 .quienesSomos h2{
     font-size: 3em;
-    text-align: center;
+    margin: auto;
     font-weight:lighter;
 }
 .mision h3, .valores h3, .diferenciales h3,.nuestroFuturo h3{
     
     font-size: 2em;
-    text-align: center;
+    margin: auto;
     font-weight:lighter;
 }
 .quienesSomos h2,.mision h3, .valores h3, .nuestroFuturo h3{
@@ -129,12 +129,12 @@
 @media (max-width:600px){
    
     .quienesSomos , .mision{
-        grid-template: 3em 10em 1fr / 1fr;
+        grid-template: auto 10em 1fr / 1fr;
     }
     .quienesSomos h2, .mision h3{
         grid-column: 1;
         font-size: 2em;
-        
+        text-align: center;
     }
     .quienesSomos img, .mision img{
         margin: auto;
@@ -151,7 +151,7 @@
         display: none;
     }
     .diferenciales{
-        grid-template: 7em 1fr / 1fr;
+        grid-template: auto 1fr / 1fr;
         grid-row-gap:0px;
     }
     .diferenciales h3, .nuestroFuturo h3{
@@ -162,7 +162,7 @@
         grid-row: 3;
     }
     .nuestroFuturo{
-        grid-template: 5em 1fr 1fr 1fr 1fr/ 1fr ;
+        grid-template: auto 1fr 1fr 1fr 1fr/ 1fr ;
     }
     .column{
         flex-direction: column;
