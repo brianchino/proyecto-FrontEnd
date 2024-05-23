@@ -35,7 +35,6 @@
     padding: 20px;
     border-radius: 10px;
     color: white;
-    font-size: 1.em;
     font-family: 'Courier New', Courier, monospace;
     
 }
@@ -112,7 +111,7 @@
     max-height: 20em;
     max-width: 30em;
     border-radius: 10px;
-    margin:20px;
+    margin: auto 20px;
 }
 .nuestroFuturo section{
     display: flex;
@@ -128,10 +127,56 @@
     font-size: 1.1em;
 }
 @media (max-width:600px){
-    .quienesSomos img{
-        width:5em;
+   
+    .quienesSomos , .mision{
+        grid-template: 3em 10em 1fr / 1fr;
+    }
+    .quienesSomos h2, .mision h3{
+        grid-column: 1;
+        font-size: 2em;
+        
+    }
+    .quienesSomos img, .mision img{
+        margin: auto;
+        height: 100%;
+        width: auto;
+    }
+    .valores{
+        margin: 2em 5% 20em 5%;
+    }
+    .quienesSomos p, .mision p{
+        grid-area: 3 / 1 ;
+    }
+    .diferenciales img{
+        display: none;
+    }
+    .diferenciales{
+        grid-template: 7em 1fr / 1fr;
+        grid-row-gap:0px;
+    }
+    .diferenciales h3, .nuestroFuturo h3{
+        grid-column: 1;
+    }
+
+    .diferenciales:nth-child(4){
+        grid-row: 3;
+    }
+    .nuestroFuturo{
+        grid-template: 5em 1fr 1fr 1fr 1fr/ 1fr ;
+    }
+    .column{
+        flex-direction: column;
     }
     .nuestroFuturo img{
-        display:none;
+        max-height: 12em;
+        max-width: 15em;
+        margin: 1em auto;
     }
+    .nuestroFuturo img[alt="ropa deportiva"]{
+        width:8em
+    }
+    .column-rev{
+        flex-direction: column-reverse;
+    }
+    
 }
