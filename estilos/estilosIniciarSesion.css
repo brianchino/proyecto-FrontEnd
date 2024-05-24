@@ -6,7 +6,7 @@ main{
     background-color: rgb(227, 249, 252);
     margin: 20vh auto;
     width: 25%;
-    min-width: 400px;
+    min-width: 375px;
     border-radius: 10px;
 }
 main h2{
