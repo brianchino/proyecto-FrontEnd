@@ -26,3 +26,12 @@ iframe{
 .sucursal h3::before{
     content: "• ";
 }
+@media (max-width:600px){
+    main{
+        grid-template: 4em 1fr 20em/1fr ;
+    }
+    h2{
+        grid-column: 1;
+        
+    }
+}
