@@ -34,7 +34,7 @@
         <h2>¡unete a nosotros!</h2>
         <form action method="post" id="formulario">
             <fieldset>
-                <legend>datos personales</legend>
+                <legend><b>datos personales</b></legend>
                 <div class="caja">
                 <section class="texto">
                     <label for="nombre">Nombre<i class="obligatorio">*</i>: </label>
@@ -48,20 +48,28 @@
                     <label for="dni">DNI<i class="obligatorio">*</i>: </label>
                     <input type="number" name="dni"  placeholder="XXXXXXXX" maxlength="8" required>
                 </section> 
-                <section>
+                <section class="texto">
                     <label for="cumpleanios">Fecha Nac: </label>
                     <input type="date" name="cumpleanios" id="cumpleanios">
                 </section> 
-                <section id="opciones">
-                    <label for="genero">Género</label>
-                    <input type="radio" name="genero" id="genero" value="1">Hombre
-                    <input type="radio" name="genero" id="genero" value="2">Mujer
-                    <input type="radio" name="genero" id="genero" value="3">Otro
+                <section class="opciones">
+                    <div>
+
+                        <label for="genero">Hombre</label><input type="radio" name="genero" id="genero1" value="1">
+                    </div>
+                    <div>
+
+                        <label for="genero">Mujer</label><input type="radio" name="genero" id="genero2" value="2">
+                    </div>
+                    <div>
+
+                        <label for="genero">Otro</label><input type="radio" name="genero" id="genero3" value="3">
+                    </div>
                 </section>
             </div>
             </fieldset>
             <fieldset>
-                <legend>direccion</legend>
+                <legend><b>direccion</b></legend>
                 <div class="caja">
                 <section class="texto">
                     <label for="calle">Calle: </label>
@@ -86,7 +94,7 @@
             </div>
             </fieldset>
             <fieldset>
-                <legend>usuario</legend>
+                <legend><b>usuario</b></legend>
                 <div class="caja2">
                 <section class="texto">
                     <label for="mail">Mail<i class="obligatorio">*</i>: </label>
