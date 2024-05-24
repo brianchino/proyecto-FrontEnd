@@ -60,13 +60,13 @@
 .diferenciales{
     margin: 0px 10% 20em 10%;
     display: grid;
-    grid-template: 5em 1fr / 1fr 1fr 1fr ;
+    grid-template: 5em 1fr / 33% 33% 33% ;
     grid-column-gap: 20px;
     grid-row-gap: 15px;
 }
 .diferenciales img{
-    width: 70%;
-    min-width: 15em;
+    width: 100%;
+    max-width: 15em;
     margin: auto;
     border-radius: 50%;
 }
@@ -119,8 +119,8 @@
 }
 .nuestroFuturo img{
     height: auto;
-    width: 20%;
-    max-height: 80%;
+    width: 50%;
+    min-width: 40%;
     border-radius: 10px;
     margin: auto 20px;
 }
@@ -130,7 +130,9 @@
     background-color: rgb(5, 95, 111);
     border-radius: 10px;
     color:white;
+    padding: 10px
 }
+
 .nuestroFuturo p{
     margin:auto 20px;
     
@@ -153,7 +155,20 @@
         width: auto;
     }
     .valores{
-        margin: 2em auto 20em auto;
+        margin: 0 auto 20em auto;
+        grid-template: 5em 1fr 1fr 1fr 1fr/ 1fr ;
+    }
+    .valores :nth-child(2){
+        grid-row-start: 2;
+    }
+    .valores :nth-child(3){
+        grid-row-start: 3;
+    }
+    .valores :nth-child(4){
+        grid-row-start: 4;
+    }
+    .valores :nth-child(5){
+        grid-row-start: 5;
     }
     .valores article{
         
@@ -195,4 +210,35 @@
         flex-direction: column-reverse;
     }
     
+}
+@media (min-width:601px) and (max-width:900px){
+    .quienesSomos{
+        margin: 3em 5% 20em 5%;
+        grid-template: auto auto / 1fr 2fr;
+    }
+    .mision{
+        margin: 3em 5% 20em 5%;
+        grid-template: auto auto / 2fr 1fr;
+    }
+    .quienesSomos img,.mision img{
+        width: 100%;
+    }
+    .diferenciales{
+        grid-template: auto 1fr / 50% 50%;
+        
+    }
+    .diferenciales img{
+        display: none;
+    }
+     .column{
+        flex-direction: column;
+    }
+    .column-rev{
+        flex-direction: column-reverse;
+    }
+    
+    .nuestroFuturo img{
+        width: 60%;
+        margin: auto;
+    }
 }
