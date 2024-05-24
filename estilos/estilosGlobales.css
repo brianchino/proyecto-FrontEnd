@@ -130,10 +130,8 @@ header{
 
 }
 @media (min-width:601px) and (max-width:900px){
-    body{
-       background-color: red;
-    }
     .search{
         width:100% ;
+        transition: all 1s ease;
     }
 }
