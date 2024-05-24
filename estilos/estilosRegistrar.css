@@ -74,9 +74,6 @@ input{
 }
 .opciones div{
     margin: auto;
-    /*display: flex;
-    justify-content: space-around;
-    align-items: center;*/
 }
 .opciones div input{
     margin-left:1em;

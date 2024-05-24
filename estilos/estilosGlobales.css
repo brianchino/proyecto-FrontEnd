@@ -3,7 +3,7 @@
     margin: 0px;
 }
 body{
-    background-color: rgb(227, 249, 252);;
+    background-color: rgb(227, 249, 252);
     /*background-image: url(../multimedia/background.png);*/
     position: relative;
     min-height: 100vh;
@@ -95,6 +95,9 @@ img[alt="icono samco"]{
 header{
     position:sticky;
     top:0;
+}
+.iniciarSesion:active{
+    background-color: white;
 }
 @media (max-width:600px) {
     .menu{
