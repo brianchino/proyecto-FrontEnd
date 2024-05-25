@@ -94,7 +94,6 @@ main h1{
 }
 @media (max-width:600px){
     .contenedor-productos{
-        flex-wrap: nowrap;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
     }
@@ -103,6 +102,32 @@ main h1{
         height: 430px;
         scroll-snap-align: center;
     }
+    main h1{
+        font-size: large;
+    }
+    .producto-tarjeta h2 {
+        font-size: medium;
+        margin-bottom: 5px;
+    }
+    .estadisticas {  
+        font-size: small;
+    }
+    .precio {
+        font-size: large;
+        margin-bottom: 5px;
+    }
+    .cuotas, .envio ,.full {
+        font-size: small;
+        margin-bottom: 5px;
+    }
+    .producto-tarjeta{
+        min-width: 200px;
+        height: 400px;
+    }
+    .mas-vendido{
+        font-size: x-small;
+    }
+    
 }
 @media (min-width:601px) and (max-width:900px){
 
