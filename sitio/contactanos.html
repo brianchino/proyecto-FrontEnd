@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contactanos</title>
     <link rel="stylesheet" href="../estilos/estilosGlobales.css">
+    <link rel="stylesheet" href="../estilos/estilosContactanos.css">
     <link rel="icon" type="ico" href="../multimedia/logo.ico" sizes="64x64">
     <script src="https://kit.fontawesome.com/12af3073e7.js" crossorigin="anonymous"></script>
 </head>
@@ -30,7 +31,22 @@
     
     </header>
     <main>
-        antiguamente el comercio de ropa no era tan facil como ahora
+        <section class="contacto">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna pregunta? ¡Nos encantaría saber de ti!</p>
+            <form method="post" enctype="text/plain">
+                <label for="nombre">Nombre:</label>
+                <input type="text"  name="nombre" required>
+    
+                <label for="mail">Correo Electrónico:</label>
+                <input type="email"  name="mail" required>
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" rows="6" required></textarea>
+    
+                <input type="submit" value="Enviar"></input>
+            </form>
+        </section>
     </main>
     <footer>
         <section id="redes">
