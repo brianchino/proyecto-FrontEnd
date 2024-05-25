@@ -131,5 +131,36 @@ main h1{
     
 }
 @media (min-width:601px) and (max-width:900px){
-
+    .contenedor-productos{
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    }
+    .producto-tarjeta{
+        width:160px;
+        margin: auto;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    main h1{
+        font-size: x-large;
+    }
+    .producto-tarjeta h2 {
+        font-size: large;
+        margin-bottom: 5px;
+    }
+    .estadisticas {  
+        font-size: medium;
+    }
+    .precio {
+        font-size: x-large;
+        margin-bottom: 5px;
+    }
+    .cuotas, .envio ,.full {
+        font-size: medium;
+        margin-bottom: 5px;
+    }
+   
+    .mas-vendido{
+        font-size: small;
+    }
 }
