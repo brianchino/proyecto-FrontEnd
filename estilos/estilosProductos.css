@@ -94,6 +94,7 @@ main h1{
 }
 @media (max-width:600px){
     .contenedor-productos{
+        justify-content: flex-start;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
     }
