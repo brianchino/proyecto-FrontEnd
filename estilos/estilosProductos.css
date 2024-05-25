@@ -1,21 +1,23 @@
 .producto-tarjeta {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: white;
+    border: 1px solid rgb(176, 174, 174);
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     max-width: 300px;
+    min-width: 250px;
     padding: 20px;
     text-align: center;
-    position: relative;
+    
     
 }
-
+main h1{
+    margin: 20px;
+}
 .mas-vendido {
-    background-color: #ff5722;
+    background-color: rgb(255, 87, 34);
     color: white;
     font-weight: bold;
     padding: 5px 10px;
-    position: absolute;
     top: 10px;
     left: 10px;
     border-radius: 3px;
@@ -32,13 +34,11 @@
 }
 
 .producto-tarjeta h2 {
-    font-size: 18px;
+    font-size: large;
     margin-bottom: 10px;
 }
 
-.estadisticas {
-    display: flex;
-    align-items: center;
+.estadisticas {  
     margin-bottom: 10px;
 }
 
@@ -54,23 +54,23 @@
 }
 
 .vistas {
-    color: #666;
+    color: gray;
 }
 
 .precio {
-    font-size: 24px;
+    font-size: x-large;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .cuotas {
-    color: #666;
+    color: gray;
     margin-bottom: 10px;
 }
 
 .envio {
-    background-color: #d4edda;
-    color: #155724;
+    background-color: rgb(212, 237, 218);
+    color: rgb(21, 87, 36);
     padding: 5px;
     border-radius: 3px;
     margin-bottom: 10px;
@@ -78,13 +78,17 @@
 
 .cumplimiento {
     font-size: 14px;
-    color: #666;
+    color: gray;
 }
 
 .full {
     font-weight: bold;
-    color: #007bff;
+    color: rgb(0, 123, 255);
 }
 .contenedor-productos{
     display:flex;
+    margin-top: 20px;
+    justify-content: space-around; 
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(197, 196, 196);
 }
