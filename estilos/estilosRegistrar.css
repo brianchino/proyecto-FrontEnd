@@ -25,7 +25,7 @@ legend{
     grid-template: repeat(3,1fr) / repeat(2,50%) ;
     
 }
-.texto ,.caja2 section{
+.texto ,.caja2 .texto{
     margin: 1em 0 0 1em;
     display: flex;
     justify-content: flex-end ;

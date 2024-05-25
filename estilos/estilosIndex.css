@@ -124,7 +124,7 @@
     border-radius: 10px;
     margin: auto 20px;
 }
-.nuestroFuturo section{
+.nuestroFuturo .column, .nuestroFuturo .column-rev{
     display: flex;
     justify-content: space-between;
     background-color: rgb(5, 95, 111);

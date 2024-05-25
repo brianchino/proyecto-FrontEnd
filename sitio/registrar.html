@@ -6,125 +6,125 @@
     <title>registrece</title>
     <link rel="stylesheet" href="../estilos/estilosGlobales.css">
     <link rel="stylesheet" href="../estilos/estilosRegistrar.css">
-    <link rel="icon" type="ico" href="../multimedia/logo.ico" sizes="64x64">
+    <link rel="icon" href="../multimedia/logo.ico">
     <script src="https://kit.fontawesome.com/12af3073e7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="busqueda">
             <a href="../index.html"><img src="../multimedia/logo-Photoroom.png-Photoroom.png" alt="icono samco"></a>
-            <form id="formBusqueda" action method="post" enctype="text/plain">
-                <input class="search"type="search" placeholder="buscar">
+            <form id="formBusqueda" action="mailto:chinobrian121@gmail.com" method="post" enctype="text/plain">
+                <input class="search" type="search" placeholder="buscar">
             </form>
             <div class="ingresoUsuario">
-                <a class="iniciarSesion"href="iniciarSesion.html">iniciar sesion</a>
-                <a class="registrar"href="registrar.html">registrarse</a>
+                <a class="iniciarSesion" href="iniciarSesion.html">iniciar sesion</a>
+                <a class="registrar" href="registrar.html">registrarse</a>
             </div>
             
         </nav>
         <nav class="menu">
-            <a class="navegacion"href="../index.html">quienes somos</a>
-            <a class="navegacion"href="productos.html">productos</a>
-            <a class="navegacion"href="contactanos.html">contactanos</a>
-            <a class="navegacion"href="sucursales.html">sucursales</a>
+            <a class="navegacion" href="../index.html">quienes somos</a>
+            <a class="navegacion" href="productos.html">productos</a>
+            <a class="navegacion" href="contactanos.html">contactanos</a>
+            <a class="navegacion" href="sucursales.html">sucursales</a>
         </nav>
         
     </header>
     <main>
         <h2>¡unete a nosotros!</h2>
-        <form action method="post" id="formulario">
+        <form action="mailto:chinobrian121@gmail.com" method="post" id="formulario">
             <fieldset>
                 <legend><b>datos personales</b></legend>
                 <div class="caja">
-                <section class="texto">
+                <div class="texto">
                     <label for="nombre">Nombre<i class="obligatorio">*</i>: </label>
-                    <input type="text" name="nombre"  placeholder="Ingrese su nombre aqui..." required>
-                </section>
-                <section class="texto">
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre aqui..." required>
+                </div>
+                <div class="texto">
                     <label for="apellido">Apellido<i class="obligatorio">*</i>: </label>
-                    <input type="text" name="apellido"  placeholder="Ingrese su apellido aqui..." required>
-                </section> 
-                <section class="texto">
+                    <input type="text" name="apellido" id="apellido"  placeholder="Ingrese su apellido aqui..." required>
+                </div> 
+                <div class="texto">
                     <label for="dni">DNI<i class="obligatorio">*</i>: </label>
-                    <input type="text" name="dni"  placeholder="XXXXXXXX" maxlength="8" required>
-                </section> 
-                <section class="texto">
+                    <input type="text" name="dni"  id="dni" placeholder="XXXXXXXX" maxlength="8" required>
+                </div> 
+                <div class="texto">
                     <label for="cumpleanios">Fecha Nac: </label>
                     <input type="date" name="cumpleanios" id="cumpleanios">
-                </section> 
-                <section class="opciones">
+                </div> 
+                <div class="opciones">
                     <div>
 
-                        <label for="genero">Hombre</label><input type="radio" name="genero" id="genero1" value="1">
+                        <label for="genero1">Hombre</label><input type="radio" name="genero" id="genero1" value="1">
                     </div>
                     <div>
 
-                        <label for="genero">Mujer</label><input type="radio" name="genero" id="genero2" value="2">
+                        <label for="genero2">Mujer</label><input type="radio" name="genero" id="genero2" value="2">
                     </div>
                     <div>
 
-                        <label for="genero">Otro</label><input type="radio" name="genero" id="genero3" value="3">
+                        <label for="genero3">Otro</label><input type="radio" name="genero" id="genero3" value="3">
                     </div>
-                </section>
+                </div>
             </div>
             </fieldset>
             <fieldset>
                 <legend><b>direccion</b></legend>
                 <div class="caja">
-                <section class="texto">
+                <div class="texto">
                     <label for="calle">Calle: </label>
-                    <input type="text" name="calle"  placeholder="Ingrese su calle aqui...">
-                </section>
-                <section class="texto">
+                    <input type="text" name="calle" id="calle" placeholder="Ingrese su calle aqui...">
+                </div>
+                <div class="texto">
                     <label for="numero">Numero: </label>
-                    <input type="text" name="numero" placeholder="Ingrese el numero...">
-                </section>
-                <section class="texto">
+                    <input type="text" name="numero" id="numero" placeholder="Ingrese el numero...">
+                </div>
+                <div class="texto">
                     <label for="ciudad">Ciudad: </label>
-                    <input type="text" name="ciudad" value="C.A.B.A">
-                </section>
-                <section class="texto">
+                    <input type="text" name="ciudad" id="ciudad" value="C.A.B.A">
+                </div>
+                <div class="texto">
                     <label for="cp">Codigo Postal: </label>
-                    <input type="text" name="cp" placeholder="Ingrese su codigo postal">
-                </section>
-                <section class="texto">
+                    <input type="text" name="cp" id="cp" placeholder="Ingrese su codigo postal">
+                </div>
+                <div class="texto">
                     <label for="telefono">Telefono: </label>
-                    <input type="tel" name="telefono" placeholder="Ingrese su telefono aqui" maxlength="10">
-                </section>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono aqui" maxlength="10">
+                </div>
             </div>
             </fieldset>
             <fieldset>
                 <legend><b>usuario</b></legend>
                 <div class="caja2">
-                <section class="texto">
+                <div class="texto">
                     <label for="mail">Mail<i class="obligatorio">*</i>: </label>
-                    <input type="email" name="mail" required>
-                </section>
+                    <input type="email" id="mail" name="mail" required>
+                </div>
                 
-                <section class="texto">
+                <div class="texto">
                     <label for="clave">Clave<i class="obligatorio">*</i>: </label>
-                    <input type="password" name="clave" maxlength="10" required>
-                </section>
-                <section class="texto">
+                    <input type="password" name="clave" id="clave" maxlength="10" required>
+                </div>
+                <div class="texto">
                     <label for="clave2">confirmacion <br>Contraseña<i class="obligatorio">*</i>:</label>
-                    <input type="password" name="clave2" maxlength="10">
-                </section>
+                    <input type="password" name="clave2" id="clave2" maxlength="10">
+                </div>
             </div>
             </fieldset>
-            <section class="botones">
+            <div class="botones">
 
                 <input type="reset" name="borrar" value="BORRAR">
                 <input type="submit" value="ENVIAR">
-            </section>
+            </div>
         </form>
     </main>
     <footer>
-        <section id="redes">
+        <div id="redes">
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-square-instagram"></i>
             <i class="fa-brands fa-youtube"></i>
-        </section>
+        </div>
     </footer>
 </body>
 </html>
