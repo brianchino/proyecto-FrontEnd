@@ -35,3 +35,23 @@ iframe{
         
     }
 }
+@media (min-width:601px) and (max-width:900px){
+    main{
+        grid-template: 4em 15em 15em /1fr ;
+    }
+    h2{
+        grid-column: 1;
+        
+    }
+    main section{
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr ;
+    }
+    .sucursal{
+        margin: auto;
+
+    }
+    iframe{
+        height: 25em;
+    }
+}
