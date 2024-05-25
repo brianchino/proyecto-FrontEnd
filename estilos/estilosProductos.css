@@ -87,7 +87,6 @@ main h1{
 }
 .contenedor-productos{
     display:flex;
-    flex-wrap: wrap;
     margin-top: 20px;
     justify-content: space-around; 
     padding-bottom: 40px;
@@ -97,12 +96,14 @@ main h1{
     .contenedor-productos{
         flex-wrap: nowrap;
         overflow-x: scroll;
+        scroll-snap-type: x mandatory;
     }
     .producto-tarjeta{
         margin: auto 20px;
-    height: 430px;
+        height: 430px;
+        scroll-snap-align: center;
     }
 }
 @media (min-width:601px) and (max-width:900px){
-    
+
 }
