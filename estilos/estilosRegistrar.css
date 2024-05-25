@@ -81,6 +81,10 @@ input{
 .opciones div input{
     margin-left:1em;
 }
+#rtaForm{
+    color:red;
+    text-align: center;
+}
 @media (max-width:600px){
     .caja{
         display: grid;
