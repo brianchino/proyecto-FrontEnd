@@ -5,20 +5,91 @@
     border-radius: 10px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
-
+    font-size: large;
 }
 
 .link{
-    color:rgb(13, 102, 80);
+    color:rgb(19, 236, 248);
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: large;
     font-weight: 900;
     
+}
+.mail{
+    color:violet;
+    cursor: pointer;
+}
+h1{
+    margin-top: 20px;
 }
 .Help p {
     margin-left: 30px ;    
 }
 
 main {
-    margin: 30px;
+    margin: 0 30px;
+}
+.acordeon label{
+    display: block;
+    height: 4em;
+    width: 100%;
+    padding:20px;
+    background-color:rgb(0, 61, 71) ;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: large;
+    color:white;
+    transition: all 300ms ease;
+}
+.acordeon label:hover{
+    background-color: rgb(3, 39, 45);
+    transform: translateY(-2px);
+}
+.acordeon .contenido-acordeon{
+    padding:0px;
+    margin-bottom: 2px;
+    max-height: 0px;
+    overflow: hidden;
+    background-color: rgb(5, 95, 111);
+    
+    transition:all 300ms ease;
+}
+.contenido-acordeon ul , .contenido-acordeon p{
+    color: white;
+    margin: 0px 6px;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 300px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+    display:none;
+}
+.preguntas{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 2px;
+}
+@media (min-width:601px) and (max-width:900px) {
+    .preguntas{
+        grid-template-columns: 50% 50%;
+    }
+    .acordeon label, .Help, .link{
+        font-size: medium; 
+    }
+    h1{
+        font-size: x-large;
+    }
+}
+@media (max-width:600px) {
+    .preguntas{
+        grid-template-columns: 100%;
+    }
+    
+    .acordeon label, .Help, .link{
+        font-size: small; 
+    }
+    h1{
+        font-size: large;
+    }
 }

@@ -8,7 +8,11 @@
     padding: 20px;
     text-align: center;
     margin-top: 20px;
-    
+    cursor: pointer;
+}
+.producto-tarjeta:hover{
+    transform: translateY(-10px) scale(1.05);
+    transition-duration: 300ms;
 }
 main h1{
     margin: 20px;
@@ -87,6 +91,7 @@ main h1{
 }
 .contenedor-productos{
     display:flex;
+    flex-wrap: wrap;
     margin-top: 20px;
     justify-content: space-around; 
     padding-bottom: 40px;
@@ -95,6 +100,7 @@ main h1{
 @media (max-width:600px){
     .contenedor-productos{
         justify-content: flex-start;
+        flex-wrap: nowrap;
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
     }
@@ -140,6 +146,7 @@ main h1{
         margin: auto;
         height: 400px;
         margin-bottom: 20px;
+        min-width: 200px;
     }
     main h1{
         font-size: x-large;

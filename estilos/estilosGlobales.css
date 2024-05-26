@@ -23,6 +23,11 @@ header, footer{
     font-size: 1.2em;
     
 }
+.navegacion:hover , .iniciarSesion:hover, .registrar:hover{
+    border: 1px solid black;
+    transition-duration: 300ms;
+    
+}
 .navegacion{
     
     padding:6px 2px ;
@@ -82,7 +87,7 @@ img[alt="icono samco"]{
     box-shadow: 0px 0px 3px 3px white;
 }
 .menu{
-    
+    height: 35px;
     width: 35em;
     margin:auto;
     display: flex;
