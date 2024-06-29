@@ -4,7 +4,7 @@ formulario.addEventListener('submit', evento => {
     validarCamposObligatorios();
     evento.preventDefault();
 })
-
+/*
 function validarCamposObligatorios(){
     let nombreUsuario = document.querySelector("#nombreUsuario").value;
     let clave = document.querySelector('#clave').value;
@@ -31,4 +31,4 @@ function validarCamposObligatorios(){
     if(!datosValidos){
          mensaje.innerHTML = msjError;
     }
-}
+}*/
