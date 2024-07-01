@@ -1,6 +1,8 @@
 
 const formulario = document.querySelector('#formulario');
 
+
+
 formulario.addEventListener('submit', evento => {
     validarCampos();
     evento.preventDefault();
@@ -44,7 +46,7 @@ function validarCampos(){
 async function enviarDatos(destino,datos){
     let envio = {
         method: "POST",
-        body: JSON.stringify({datos: datos}),
+        body: JSON.stringify(datos),
         headers: {
         "Content-type": "application/json; charset=UTF-8"
         }
@@ -53,5 +55,29 @@ async function enviarDatos(destino,datos){
                         .then(respuesta => respuesta.json())
                         .then(resultado => resultado)
                         .catch(error => console.warn(error.status));
-    console.log(resultado)           
+    if (resultado.status == 200) {
+        modificarNavegacion(datos.mail, resultado.perfil);
+        sessionStorage.setItem('mailDeSesion',datos['mail']);
+    } else {
+        alert('Revisá los datos ingresados');
+    }         
+}
+
+function modificarNavegacion(persona, perfil) {
+
+    window.location.href = '../sitio/perfil.html'
+    //document.querySelector('#regCuenta').setAttribute('hidden', 'true');
+    //let logueo = document.querySelector('#ingCuenta');
+    //logueo.innerHTML = "Cerrar sesión";
+    //logueo.setAttribute('href', "#cerrar");
+    //window.location.hash = '#cursos';
+    //let nav = document.querySelector('#menuPpal');
+    //let identidad = document.createElement('a');
+    //identidad.className = 'menuSPA color2 pequenia'
+    //identidad.id = 'persona';
+    //identidad.href = '#perfil';
+    //identidad.innerHTML = `Hola, ${persona}`;
+    //nav.appendChild(identidad);
+    //sessionStorage.setItem('identidad', persona);
+    //sessionStorage.setItem('perfil', perfil);
 }

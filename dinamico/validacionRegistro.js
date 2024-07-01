@@ -1,11 +1,11 @@
 const formulario = document.querySelector('#formulario');
 
 formulario.addEventListener('submit', evento => {
-    validarCamposObligatorios()
+    validarCampos()
     evento.preventDefault();
 })
 
-function validarCamposObligatorios(){
+function validarCampos(){
     // let nombre = document.querySelector("#nombre").value;
     // let apellido = document.querySelector("#apellido").value;
     // let dni = document.querySelector("#dni").value;
@@ -73,4 +73,5 @@ async function enviarDatos(destino,datos){
                         .catch(error => console.warn(error.status));
     console.log(resultado)              
 }
+
 

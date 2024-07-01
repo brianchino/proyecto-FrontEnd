@@ -40,15 +40,16 @@ legend{
     display: flex;
     justify-content: space-between;
 }
-.botones input[type="submit"],.botones input[type="reset"]{
+.botones input[type="submit"],.botones input[type="reset"],#borrar,#modificar{
     background-color: rgb(0, 61, 71);
     color: white;
     border-radius: 3px;
     height: 2em;
     width: 6em;
     cursor: pointer;
+    margin-inline-start: 5px;
 }
-.botones input[type="submit"]:hover,.botones input[type="reset"]:hover{
+.botones input[type="submit"]:hover,.botones input[type="reset"]:hover ,.botones button:hover{
  background-color: rgb(3, 39, 45);
  transform: translate(2px,2px);
 }

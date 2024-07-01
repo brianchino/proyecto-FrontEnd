@@ -17,7 +17,7 @@
                 <input class="search" type="search" placeholder="buscar">
             </form>
             <div class="ingresoUsuario">
-                <a class="registrar" href="cerrarSesion.html">cerrar sesion</a>
+                <a class="registrar" href="../index.html">cerrar sesion</a>
                 <a class="registrar" href="perfil.html">perfil</a>
             </div>
             
@@ -31,7 +31,7 @@
         
     </header>
     <main>
-        <h2>¡unete a nosotros!</h2>
+        <h2>tu perfil</h2>
         <form  id="formulario">
             <fieldset>
                  <legend><b>datos personales</b></legend>
@@ -49,10 +49,10 @@
                     <input type="text" name="dni"  id="dni" placeholder="XXXXXXXX" maxlength="8" >
                 </div> 
                 <div class="texto">
-                    <label for="cumpleanios">Fecha Nac: </label>
-                    <input type="date" name="cumpleanios" id="cumpleanios">
+                    <label for="fecha_de_nacimiento">Fecha Nac: </label>
+                    <input type="date" name="fecha_de_nacimiento" id="fecha_de_nacimiento">
                 </div> 
-                <div class="opciones">
+                <!-- <div class="opciones">
                     <div>
 
                         <label for="genero1">Hombre</label><input type="radio" name="genero" id="genero1" value="1">
@@ -65,15 +65,17 @@
 
                         <label for="genero3">Otro</label><input type="radio" name="genero" id="genero3" value="3">
                     </div>
-                </div>
+                </div> -->
             </div>
             </fieldset>
             
             <p id="rtaForm"></p>
             <div class="botones">
-
-                <input type="reset" name="borrar" value="BORRAR">
-                <input type="submit" value="ENVIAR">
+                <button id="borrar" hidden >BORRAR</button>
+                <button id="modificar" hidden> MODIFICAR</button>
+                
+                <input id="enviar" type="submit" value="ENVIAR">
+                <button id="enviar_modificado" hidden>ENVIAR MODIFICADO</button>
             </div>
             
         </form>
@@ -86,6 +88,7 @@
             <i class="fa-brands fa-youtube"></i>
         </div>
     </footer>
-    <script src="../dinamico/validacionRegistro.js"></script>
+    <script src="../dinamico/validacionDePerfil.js"></script>
+    <script src="../dinamico/modificarPerfil.js"></script>
 </body>
 </html>
