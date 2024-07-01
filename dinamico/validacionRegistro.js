@@ -1,7 +1,7 @@
 const formulario = document.querySelector('#formulario');
 
 formulario.addEventListener('submit', evento => {
-    validarCamposObligatorios();
+    validarCamposObligatorios()
     evento.preventDefault();
 })
 
@@ -41,9 +41,36 @@ function validarCamposObligatorios(){
     let mensaje = document.querySelector("#rtaForm");
      
     if(datosValidos){
+        //transoformar en objeto
+        let entradas = document.querySelectorAll('.texto>input');
+        let datos = {}
+        datos[entradas[0].getAttribute('id')] = entradas[0].value;
+        
+        datos[entradas[1].getAttribute('id')] = entradas[1].value;
+        
+        enviarDatos("http://127.0.0.1:5000/api-proyecto/cuenta",datos);
         mensaje.innerHTML = "registrado con exito";
+        
     }
-    if(!datosValidos){
+    else{
          mensaje.innerHTML = msjError;
+         
     }
 }
+
+
+async function enviarDatos(destino,datos){
+    let envio = {
+        method: "POST",
+        body: JSON.stringify(datos),
+        headers: {
+        "Content-type": "application/json; charset=UTF-8"
+        }
+    }
+    let resultado = await fetch(destino, envio)
+                        .then(respuesta => respuesta.json())
+                        .then(resultado => resultado)
+                        .catch(error => console.warn(error.status));
+    console.log(resultado)              
+}
+

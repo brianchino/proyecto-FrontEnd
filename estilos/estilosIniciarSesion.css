@@ -21,7 +21,7 @@ main form{
 }
 
 
-.correo , .contraseña {
+.mail , .clave {
     position: relative;
     border-bottom: 2px solid rgb(173, 173, 173);
     width:100%;
@@ -70,7 +70,7 @@ input[type="submit"]:hover{
     main h2{
         font-size:medium;
     }
-    .correo , .contraseña {
+    .mail , .clave {
         font-size:medium;
     }
     input[type="submit"]{
@@ -86,7 +86,7 @@ input[type="submit"]:hover{
     main h2{
         font-size:large;
     }
-    .correo , .contraseña {
+    .mail , .clave {
         font-size:large;
     }
     input[type="submit"]{
