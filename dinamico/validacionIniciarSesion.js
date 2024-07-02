@@ -56,28 +56,10 @@ async function enviarDatos(destino,datos){
                         .then(resultado => resultado)
                         .catch(error => console.warn(error.status));
     if (resultado.status == 200) {
-        modificarNavegacion(datos.mail, resultado.perfil);
+        window.location.href = './perfil.html'
         sessionStorage.setItem('mailDeSesion',datos['mail']);
     } else {
         alert('Revisá los datos ingresados');
     }         
 }
 
-function modificarNavegacion(persona, perfil) {
-
-    window.location.href = '../sitio/perfil.html'
-    //document.querySelector('#regCuenta').setAttribute('hidden', 'true');
-    //let logueo = document.querySelector('#ingCuenta');
-    //logueo.innerHTML = "Cerrar sesión";
-    //logueo.setAttribute('href', "#cerrar");
-    //window.location.hash = '#cursos';
-    //let nav = document.querySelector('#menuPpal');
-    //let identidad = document.createElement('a');
-    //identidad.className = 'menuSPA color2 pequenia'
-    //identidad.id = 'persona';
-    //identidad.href = '#perfil';
-    //identidad.innerHTML = `Hola, ${persona}`;
-    //nav.appendChild(identidad);
-    //sessionStorage.setItem('identidad', persona);
-    //sessionStorage.setItem('perfil', perfil);
-}

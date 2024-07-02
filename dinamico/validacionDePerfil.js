@@ -1,16 +1,14 @@
 
+const boton_enviar = document.querySelector('#enviar');
 
-
-const formulario = document.querySelector('#formulario');
-
-formulario.addEventListener('submit', evento => {
-    if(validarCamposObligatorios()){
-        validarCampos();
+boton_enviar.addEventListener('click', evento => {
+    if(validarCamposObligatorios_validacionPerfil()){
+        validarCampos_validacionPerfil();
     }
     evento.preventDefault();
 })
 
-function validarCampos(){
+async function validarCampos_validacionPerfil(){
     let entradas = document.querySelectorAll('.texto>input');
     let datos = {}
 
@@ -19,10 +17,10 @@ function validarCampos(){
     datos[entradas[2].getAttribute('id')] = entradas[2].value;
     datos[entradas[3].getAttribute('id')] = entradas[3].value;
     datos['mail'] = sessionStorage.getItem('mailDeSesion')
-    enviarDatos("http://127.0.0.1:5000/api-proyecto/guardar-perfil",datos);
-    establecerPerfil(entradas);
+    enviarDatos_validacionPerfil("http://127.0.0.1:5000/api-proyecto/guardar-perfil",datos);
+    establecerPerfil_validacionPerfil(entradas);
 }
-async function enviarDatos(destino,datos){
+async function enviarDatos_validacionPerfil(destino,datos){
     let envio = {
         method: "POST",
         body: JSON.stringify(datos),
@@ -36,7 +34,7 @@ async function enviarDatos(destino,datos){
                         .catch(error => console.warn(error.status));
          
 }
-async function establecerPerfil(entradas){
+async function establecerPerfil_validacionPerfil(entradas){
     let boton_borrar = document.querySelector('#borrar');
     let boton_modificar = document.querySelector('#modificar');
     let boton_enviar_modificado = document.querySelector('#enviar_modificado');
@@ -50,7 +48,7 @@ async function establecerPerfil(entradas){
     }
     
 }
-function validarCamposObligatorios(){
+async function validarCamposObligatorios_validacionPerfil(){
      let nombre = document.querySelector("#nombre").value;
      let apellido = document.querySelector("#apellido").value;
      let dni = document.querySelector("#dni").value;
