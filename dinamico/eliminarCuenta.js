@@ -21,7 +21,7 @@ async function solicitar_eliminacion(){
         "Content-type": "application/json; charset=UTF-8"
         }
     }
-        let resultado = await fetch('http://127.0.0.1:5000/api-proyecto/eliminar-cuenta', envio)
+        let resultado = await fetch('http://chinoBrian.pythonanywhere.com/api-proyecto/eliminar-cuenta', envio)
         .then(respuesta => respuesta.json())
         .then(resultado => resultado)
         .catch(error => console.warn(error.status));
