@@ -17,7 +17,7 @@ async function validarCampos_validacionPerfil(){
     datos[entradas[2].getAttribute('id')] = entradas[2].value;
     datos[entradas[3].getAttribute('id')] = entradas[3].value;
     datos['mail'] = sessionStorage.getItem('mailDeSesion')
-    enviarDatos_validacionPerfil("http://chinoBrian.pythonanywhere.com/api-proyecto/guardar-perfil",datos);
+    enviarDatos_validacionPerfil("http://chinobrian.pythonanywhere.com/api-proyecto/guardar-perfil",datos);
     establecerPerfil_validacionPerfil(entradas);
 }
 async function enviarDatos_validacionPerfil(destino,datos){

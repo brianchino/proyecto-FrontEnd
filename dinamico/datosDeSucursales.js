@@ -1,5 +1,5 @@
 // origen de los datos
-const origen = "http://chinoBrian.pythonanywhere.com/api-proyecto/sucursales"
+const origen = "http://chinobrian.pythonanywhere.com/api-proyecto/sucursales"
 
 //evento a escuchar
 window.addEventListener('DOMContentLoaded', evento =>{

@@ -50,7 +50,7 @@ async function validarCampos_modificarPerfil(){
     datos[entradas[2].getAttribute('id')] = entradas[2].value;
     datos[entradas[3].getAttribute('id')] = entradas[3].value;
     datos['mail'] = sessionStorage.getItem('mailDeSesion')
-    enviarDatos_modificarPerfil("http://chinoBrian.pythonanywhere.com/api-proyecto/modificar-perfil",datos);
+    enviarDatos_modificarPerfil("http://chinobrian.pythonanywhere.com/api-proyecto/modificar-perfil",datos);
     establecerPerfil_modificarPerfil(entradas);
 }
 async function establecerPerfil_modificarPerfil(entradas){
