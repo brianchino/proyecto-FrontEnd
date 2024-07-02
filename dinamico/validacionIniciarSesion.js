@@ -41,7 +41,7 @@ function validarCampos(){
         
         datos[entradas[1].getAttribute('id')] = entradas[1].value;
         
-        enviarDatos("http://chinobrian.pythonanywhere.com/api-proyecto/ingreso",datos);
+        enviarDatos("https://chinobrian.pythonanywhere.com/api-proyecto/ingreso",datos);
 }
 async function enviarDatos(destino,datos){
     let envio = {

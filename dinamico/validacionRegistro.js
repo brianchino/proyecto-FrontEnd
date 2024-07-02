@@ -48,7 +48,7 @@ function validarCampos(){
         
         datos[entradas[1].getAttribute('id')] = entradas[1].value;
         
-        enviarDatos("http://chinobrian.pythonanywhere.com/api-proyecto/cuenta",datos);
+        enviarDatos("https://chinobrian.pythonanywhere.com/api-proyecto/cuenta",datos);
         mensaje.innerHTML = "registrado con exito";
         
     }

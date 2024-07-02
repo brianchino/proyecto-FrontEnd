@@ -21,7 +21,7 @@ async function solicitar_eliminacion(){
         "Content-type": "application/json; charset=UTF-8"
         }
     }
-        let resultado = await fetch('http://chinobrian.pythonanywhere.com/api-proyecto/eliminar-cuenta', envio)
+        let resultado = await fetch('https://chinobrian.pythonanywhere.com/api-proyecto/eliminar-cuenta', envio)
         .then(respuesta => respuesta.json())
         .then(resultado => resultado)
         .catch(error => console.warn(error.status));
