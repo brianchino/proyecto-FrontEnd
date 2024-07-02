@@ -58,6 +58,11 @@ async function enviarDatos(destino,datos){
     if (resultado.status == 200) {
         window.location.href = './perfil.html'
         sessionStorage.setItem('mailDeSesion',datos['mail']);
+        sessionStorage.setItem('perfilExistente',resultado.perfil);
+        sessionStorage.setItem('nombre',resultado.nombre);
+        sessionStorage.setItem('apellido',resultado.apellido);
+        sessionStorage.setItem('dni',resultado.dni);
+        sessionStorage.setItem('fecha_de_nacimiento',resultado.fecha_de_nacimiento);
     } else {
         alert('Revisá los datos ingresados');
     }         

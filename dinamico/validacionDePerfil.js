@@ -34,6 +34,38 @@ async function enviarDatos_validacionPerfil(destino,datos){
                         .catch(error => console.warn(error.status));
          
 }
+
+if (sessionStorage.getItem('perfilExistente') == 1 ){
+    console.log('perfilExistente')
+    input_nombre = document.querySelector("#nombre");
+    input_apellido =document.querySelector("#apellido");
+    input_dni = document.querySelector("#dni");
+    input_fecha_de_nacimiento = document.querySelector('#fecha_de_nacimiento');
+
+    input_nombre.value = sessionStorage.getItem('nombre');
+    input_dni.value = sessionStorage.getItem('dni');
+    input_apellido.value = sessionStorage.getItem('apellido');
+
+    input_fecha_de_nacimiento.value = setDate(sessionStorage.getItem('fecha_de_nacimiento'));
+    
+    entradas = [input_nombre,input_apellido,input_dni,input_fecha_de_nacimiento];
+    establecerPerfil_validacionPerfil(entradas);
+}
+
+function setDate(dateStr) {
+    // Fecha en el formato especificado
+    
+    // Convertir la cadena de fecha a un objeto Date
+    const dateObj = new Date(dateStr);
+    
+    // Formatear la fecha al formato YYYY-MM-DD
+    const year = dateObj.getFullYear();
+    const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+    const day = String(dateObj.getDate()).padStart(2, '0');
+    const formattedDate = `${year}-${month}-${day}`;
+    return formattedDate;
+}
+    
 async function establecerPerfil_validacionPerfil(entradas){
     let boton_borrar = document.querySelector('#borrar');
     let boton_modificar = document.querySelector('#modificar');
