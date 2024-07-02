@@ -40,7 +40,7 @@ legend{
     display: flex;
     justify-content: space-between;
 }
-.botones input[type="submit"],.botones input[type="reset"],#borrar,#modificar{
+.botones input[type="submit"],.botones input[type="reset"], button{
     background-color: rgb(0, 61, 71);
     color: white;
     border-radius: 3px;
@@ -49,7 +49,7 @@ legend{
     cursor: pointer;
     margin-inline-start: 5px;
 }
-.botones input[type="submit"]:hover,.botones input[type="reset"]:hover ,.botones button:hover{
+.botones input[type="submit"]:hover,.botones input[type="reset"]:hover button:hover{
  background-color: rgb(3, 39, 45);
  transform: translate(2px,2px);
 }
